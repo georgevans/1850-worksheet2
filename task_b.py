@@ -1,7 +1,9 @@
 grade = input('Enter numerical grade between 0-100: ')
 if (grade.isnumeric()):
     grade = int(grade)
-    if grade >= 80 and grade <= 100:
+    if(grade > 100 or grade < 0):
+        print("Error: Grades must be between 0 and 100")
+    elif grade >= 80 and grade <= 100:
         print("Your grade is: A") 
     elif grade <= 79 and grade >= 60:
         print("Your grade is: B")
