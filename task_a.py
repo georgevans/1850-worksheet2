@@ -13,6 +13,6 @@ day = input('Enter day of the week: ').lower()
 if day in weekdays:
     for n in weekdays.keys():
         if day == n:
-            print(weekdays[n])
+            print(f"{day.capitalize()} is day {weekdays[n]}")
 else:
     print('Please enter a valid day')
